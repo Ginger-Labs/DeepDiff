@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		27FC3364217FD0AC00DC1D8C /* NSCollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC3363217FD0AC00DC1D8C /* NSCollectionView+Extensions.swift */; };
 		27FC3365217FD0D100DC1D8C /* IndexPathConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239E41F1FAE34740042E7BA /* IndexPathConverter.swift */; };
+		27FC3366217FD2C700DC1D8C /* IndexPathConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239E41F1FAE34740042E7BA /* IndexPathConverter.swift */; };
 		D21E6E2B1FFBC1E20048AF75 /* WagnerFischer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E6E2A1FFBC1E20048AF75 /* WagnerFischer.swift */; };
 		D21E6E2C1FFBC1E20048AF75 /* WagnerFischer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E6E2A1FFBC1E20048AF75 /* WagnerFischer.swift */; };
 		D21E6E2D1FFBC1E20048AF75 /* WagnerFischer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E6E2A1FFBC1E20048AF75 /* WagnerFischer.swift */; };
@@ -221,6 +222,7 @@
 				D2B318F81FA8CCFC00A0B637 /* DeepDiff.swift */,
 				D2B318F91FA8CCFC00A0B637 /* MoveReducer.swift */,
 				D2B318FA1FA8CCFC00A0B637 /* Change.swift */,
+				D239E41F1FAE34740042E7BA /* IndexPathConverter.swift */,
 				D2A813661FAB731600A94BDE /* Array+Extensions.swift */,
 			);
 			path = Shared;
@@ -229,7 +231,6 @@
 		D2B318FB1FA8CCFC00A0B637 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D239E41F1FAE34740042E7BA /* IndexPathConverter.swift */,
 				D2B318FC1FA8CD0F00A0B637 /* UITableView+Extensions.swift */,
 				D2B3190F1FA8CD2200A0B637 /* UICollectionView+Extensions.swift */,
 			);
@@ -602,6 +603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FC3366217FD2C700DC1D8C /* IndexPathConverter.swift in Sources */,
 				D2B3190C1FA8CD1400A0B637 /* DeepDiff.swift in Sources */,
 				D2B3190E1FA8CD1400A0B637 /* Change.swift in Sources */,
 				D2B3190D1FA8CD1400A0B637 /* MoveReducer.swift in Sources */,
