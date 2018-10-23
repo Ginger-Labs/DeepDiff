@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27FC3364217FD0AC00DC1D8C /* NSCollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FC3363217FD0AC00DC1D8C /* NSCollectionView+Extensions.swift */; };
+		27FC3365217FD0D100DC1D8C /* IndexPathConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D239E41F1FAE34740042E7BA /* IndexPathConverter.swift */; };
 		D21E6E2B1FFBC1E20048AF75 /* WagnerFischer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E6E2A1FFBC1E20048AF75 /* WagnerFischer.swift */; };
 		D21E6E2C1FFBC1E20048AF75 /* WagnerFischer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E6E2A1FFBC1E20048AF75 /* WagnerFischer.swift */; };
 		D21E6E2D1FFBC1E20048AF75 /* WagnerFischer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E6E2A1FFBC1E20048AF75 /* WagnerFischer.swift */; };
@@ -92,6 +94,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27FC3363217FD0AC00DC1D8C /* NSCollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		D21E6E2A1FFBC1E20048AF75 /* WagnerFischer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WagnerFischer.swift; sourceTree = "<group>"; };
 		D21E6E2F1FFBC1EF0048AF75 /* Heckel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heckel.swift; sourceTree = "<group>"; };
 		D238491D1FA86AFC00316A21 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -182,6 +185,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27FC3362217FD07F00DC1D8C /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				27FC3363217FD0AC00DC1D8C /* NSCollectionView+Extensions.swift */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
 		D21E6E291FFBC1E20048AF75 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +265,7 @@
 		D5C629691C3A809D007F7B7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				27FC3362217FD07F00DC1D8C /* Mac */,
 				D2B318FB1FA8CCFC00A0B637 /* iOS */,
 				D2B318F61FA8CCFC00A0B637 /* Shared */,
 			);
@@ -638,6 +650,8 @@
 				D2B319061FA8CD1300A0B637 /* Change.swift in Sources */,
 				D2B319051FA8CD1300A0B637 /* MoveReducer.swift in Sources */,
 				D29C691F1FFCD8790028DE14 /* DiffAware.swift in Sources */,
+				27FC3365217FD0D100DC1D8C /* IndexPathConverter.swift in Sources */,
+				27FC3364217FD0AC00DC1D8C /* NSCollectionView+Extensions.swift in Sources */,
 				D21E6E2C1FFBC1E20048AF75 /* WagnerFischer.swift in Sources */,
 				D2A813681FAB731600A94BDE /* Array+Extensions.swift in Sources */,
 				D21E6E311FFBC1EF0048AF75 /* Heckel.swift in Sources */,
