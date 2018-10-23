@@ -8,6 +8,7 @@
 
 import AppKit
 
+@available(OSX 10.11, *)
 public extension NSCollectionView {
     
     /// Animate reload in a batch update
