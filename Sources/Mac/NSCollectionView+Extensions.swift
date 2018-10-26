@@ -26,22 +26,6 @@ public extension NSCollectionView {
         
         // reloadRows needs to be called outside the batch
         
-        performBatchUpdates({
-            internalBatchUpdates(changesWithIndexPath: changesWithIndexPath)
-        }, completionHandler: { finished in
-            completion?(finished)
-        })
-        
-        changesWithIndexPath.replaces.executeIfPresent {
-            self.reloadItems(at: Set($0))
-        }
-    }
-    
-    // MARK: - Helper
-    
-    private func internalBatchUpdates(changesWithIndexPath: ChangeWithIndexPath) {
-        NSAnimationContext.current.duration = 1.0;
-
         changesWithIndexPath.deletes.executeIfPresent {
             animator().deleteItems(at: Set($0))
         }
@@ -54,6 +38,10 @@ public extension NSCollectionView {
             $0.forEach { move in
                 animator().moveItem(at: move.from, to: move.to)
             }
+        }
+        
+        changesWithIndexPath.replaces.executeIfPresent {
+            animator().reloadItems(at: Set($0))
         }
     }
 }
