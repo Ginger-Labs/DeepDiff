@@ -25,15 +25,15 @@ public extension UICollectionView {
     
     // reloadRows needs to be called outside the batch
     
-    performBatchUpdates({
+//    performBatchUpdates({
       internalBatchUpdates(changesWithIndexPath: changesWithIndexPath)
-    }, completion: { finished in
-      completion?(finished)
-    })
+//    }, completion: { finished in
+//      completion?(finished)
+//    })
     
-    changesWithIndexPath.replaces.executeIfPresent {
-      self.reloadItems(at: $0)
-    }
+//    changesWithIndexPath.replaces.executeIfPresent {
+      self.reloadItems(at: changesWithIndexPath.replaces)
+//    }
   }
   
   // MARK: - Helper
