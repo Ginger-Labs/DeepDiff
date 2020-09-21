@@ -16,7 +16,7 @@ public extension UICollectionView {
   ///   - changes: The changes from diff
   ///   - section: The section that all calculated IndexPath belong
   ///   - completion: Called when operation completes
-  public func reload<T: Hashable>(
+  func reload<T: Hashable>(
     changes: [Change<T>],
     section: Int = 0,
     completion: ((Bool) -> Void)? = nil) {
